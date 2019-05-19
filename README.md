@@ -12,7 +12,9 @@ Install [anaconda](https://www.anaconda.com/distribution/) or modify the script 
 3. You need also to have a **AWS Redshift cluster** up and running (4 to 8 nodes suggested)
 
 ### Main Goal
-The compagny Sparkify need to analyses theirs data to better know the way users (free/paid) use theirs services. With this data model we will be able to ask question like When? Who? Where? and What? about the data.
+The compagny Sparkify need to analyses theirs data to better know the way users (free/paid) use theirs services.
+With this data model we will be able to ask question like When? Who? Where? and What? about the data.
+The task is to build an ETL Pipeline that extract data from a S3, stagging it in Redshift to be able to transform the data into a Star Schema (Dimensional and Fact Tables) to let the Analytics Team to find insights easily. 
 
 ### Data Model
 ![Song ERD](./Song_ERD.png)
