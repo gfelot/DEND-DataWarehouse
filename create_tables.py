@@ -5,6 +5,11 @@ from sql_queries import create_table_queries, drop_table_queries
 
 
 def drop_tables(cur, conn):
+    """
+    Drop all the table present in the Redshift cluster
+    :param cur: cursor connexion object on Redshift
+    :param conn: connection object on Redshift
+    """
     for o in drop_table_queries:
         print(o['message'])
         try:
@@ -17,6 +22,11 @@ def drop_tables(cur, conn):
 
 
 def create_tables(cur, conn):
+    """
+    Create table in the Redshift cluster
+    :param cur: cursor connexion object on Redshift
+    :param conn: connection object on Redshift
+    """
     for o in create_table_queries:
         print(o['message'])
         try:

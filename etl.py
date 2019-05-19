@@ -5,6 +5,11 @@ from sql_queries import copy_table_queries, insert_table_queries
 
 
 def load_staging_tables(cur, conn):
+    """
+    Load the data from the S3 bucket to the staging table in Redshift
+    :param cur: cursor connexion object on redshift
+    :param conn: connection object on the redshift
+    """
     for o in copy_table_queries:
         print(o['message'])
         try:
@@ -17,6 +22,11 @@ def load_staging_tables(cur, conn):
 
 
 def insert_tables(cur, conn):
+    """
+    Insert data from the staging table to the dimension and fact table
+    :param cur: cursor connexion object on redshift
+    :param conn: connection object on the redshift
+    """
     for o in insert_table_queries:
         print(o['message'])
         try:
