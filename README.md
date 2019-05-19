@@ -11,10 +11,6 @@ Install [anaconda](https://www.anaconda.com/distribution/) or modify the script 
 
 3. You need also to have a **AWS Redshift cluster** up and running (4 to 8 nodes suggested)
 
-4. To understand the concept and logic of this project you can read an run the **.ipynb** files with [Jupyter Notebook](https://jupyter.org/).
-
-> You will not be able to run **test.ipynb**, **etl.ipynb**, or **etl.py** until you have run **create_tables.py** at least once to create the sparkifydb database, which these other files connect to.
-
 ### Main Goal
 The compagny Sparkify need to analyses theirs data to better know the way users (free/paid) use theirs services. With this data model we will be able to ask question like When? Who? Where? and What? about the data.
 
